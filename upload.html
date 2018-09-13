@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<style>
+body{
+  background-image: url('upload.jpg');
+  margin : auto;
+}
+ input[type=email],input[type=text] ,input[type=password]{
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+form{
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #333;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button a{
+  color:inherit;
+  text-decoration: none;
+}
+</style>
+</head>
+<title>DIY Projects</title>
+
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h1 style="font-family: Baskerville, Baskerville Old Face, Goudy Old Style, Garamond, Times New Roman, serif;
+  font-size: 50px;
+  text-align: center;
+  color:#555"><a href="homepage.php">DIY</a> Project Upload</h1>
+<form name="upload" method="post" action="upload.php" enctype="multipart/form-data">
+  <input type="text" name="uname" placeholder="Username" required/><br><br>
+  <input type="text" name="pname" placeholder="Project name" required/><br><br>
+  <textarea name="content" cols="40" rows="5"></textarea><br><br>
+  Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+</body>
+</html>

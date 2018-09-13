@@ -1,0 +1,28 @@
+
+ input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    width:600px;
+    height: 48px;
+    
+}
+input[type=submit] {
+	 
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    height: 48px;
+    background-color: white;
+    padding: 6px 12px;
+    width: 80px;
+    position: relative;
+    right:5px;
+
+
+	}
+
+
+  
